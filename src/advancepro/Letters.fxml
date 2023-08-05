@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="advancepro.FXMLDocumentController">
+   <children>
+      <ImageView fx:id="backgrundletter" fitHeight="402.0" fitWidth="700.0" onMouseClicked="#backgrundVoice">
+         <image>
+            <Image url="@../assests/backat%20(2).png" />
+         </image>
+      </ImageView>
+      <Text fill="#ffd751" fontSmoothingType="LCD" layoutX="110.0" layoutY="113.0" stroke="#0d0d0d" strokeType="OUTSIDE" strokeWidth="2.0" style="-fx-smooth: #FFBD59; -fx-font-weight: 10;" text="Letters" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="48.0" />
+         </font>
+      </Text>
+      <Button fx:id="BACK" layoutX="238.0" layoutY="347.0" mnemonicParsing="false" onAction="#BACKSelect" prefHeight="36.0" prefWidth="85.0" style="-fx-background-color: #F4BD38; -fx-background-radius: 90; -fx-border-radius: 90; -fx-border-color: #1E1E1E; -fx-border-width: 2;" text="BACK">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="exit" layoutX="339.0" layoutY="347.0" mnemonicParsing="false" onAction="#exit" prefHeight="36.0" prefWidth="85.0" style="-fx-background-color: #F4BD38; -fx-background-radius: 90; -fx-border-radius: 90; -fx-border-color: #1E1E1E; -fx-border-width: 2;" text="EXIT">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="voice" layoutX="31.0" layoutY="14.0" lineSpacing="5.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#voice" prefHeight="29.0" prefWidth="29.0" style="-fx-background-color: #F4BD38; -fx-border-radius: 75; -fx-background-radius: 75; -fx-border-width: 2; -fx-border-color: #1E1E1E; -fx-border-insets: -5; -fx-background-insets: -2;" textAlignment="JUSTIFY" textFill="#501f01" textOverrun="LEADING_WORD_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="68.0" fitWidth="79.0">
+               <image>
+                  <Image url="@../assests/voice.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="home" layoutX="76.0" layoutY="14.0" lineSpacing="5.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#BACKHome" prefHeight="28.0" prefWidth="29.0" style="-fx-background-color: #F4BD38; -fx-border-radius: 75; -fx-background-radius: 75; -fx-border-width: 2; -fx-border-color: #1E1E1E; -fx-border-insets: -5; -fx-background-insets: -2;" textAlignment="JUSTIFY" textFill="#501f01" textOverrun="LEADING_WORD_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="52.0" fitWidth="78.0">
+               <image>
+                  <Image url="@../assests/home%20.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="advancepro.AdvancedsignController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="707.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/endOfAdvanced.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Exit" layoutX="25.0" layoutY="22.0" mnemonicParsing="false" onAction="#ExitButtonClicked" prefHeight="37.0" prefWidth="82.0" style="-fx-background-color: #ffbd59;" text="EXIT" textFill="#77c5dd">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets bottom="2.0" left="4.0" right="4.0" top="2.0" />
+         </opaqueInsets>
+      </Button>
+   </children>
+</Pane>

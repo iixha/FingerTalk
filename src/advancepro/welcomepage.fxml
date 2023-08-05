@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="396.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="advancepro.StartP1Controller">
+    <children>
+        <ImageView fx:id="welcome" fitHeight="402.0" fitWidth="708.0" onMouseClicked="#startGame" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assests/welcomepage.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="NoteLabel" layoutX="91.0" layoutY="304.0" textFill="#ff58b2">
+            <font>
+                <Font name="Comic Sans MS Bold" size="18.0" />
+            </font>
+        </Label>
+    </children>
+</Pane>
