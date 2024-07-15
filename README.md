@@ -1,69 +1,72 @@
+
 # Finger Talk
 
-**Finger Talk** is a fun and interactive game that teaches American Sign Language (ASL) letters and numbers. Designed to be entertaining and educational, this game features engaging graphics, sound effects, and challenges. It's suitable for all ages, allowing players to learn sign language in a fun way and earn points as they progress.
+Finger Talk is a fun and interactive game designed to teach American Sign Language (ASL) letters and numbers. It is both entertaining and educational, featuring graphics, sound effects, and challenges. Suitable for all ages, this application helps users learn sign language in an engaging way and earn points as they progress.
 
 ## Features
 
-- Learn ASL letters and numbers through interactive gameplay.
-- Engaging graphics and sound effects.
-- Challenges to test your knowledge and earn points.
-- Suitable for all age groups.
+- Learn ASL letters and numbers with interactive lessons
+- Enjoy entertaining graphics and sound effects
+- Take on challenges and earn points
+- Suitable for all ages
+- Supports audio and visual aids
 
-## Installation
+## Requirements
 
-### Prerequisites
+- Java Development Kit (JDK) 8 or higher
+- NetBeans IDE
+- Hibernate ORM
+- MySQL Database
 
-- JDK 8 or later
-- Hibernate
-- JavaFX
+## Setup and Installation
 
-### Setup
-
-1. Clone the repository:
+1. **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/finger-talk.git
-    cd finger-talk
+    git clone https://github.com/yourusername/finger-talk.git
     ```
-2. Configure Hibernate:
+   
+2. **Open the project in NetBeans:**
+    - Go to `File` > `Open Project`
+    - Select the `finger-talk` folder
 
-   - Create a file named `hibernate.cfg.xml` in the `src/main/resources` directory with the following content:
+3. **Setup MySQL Database:**
+    - Create a new MySQL database named `finger_talk_db`
+    - Import the provided `finger_talk_db.sql` file to create the necessary tables
 
-     ```xml
-     <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
-     <hibernate-configuration>
-         <session-factory>
-             <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-             <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-             <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/your_database</property>
-             <property name="hibernate.connection.username">your_username</property>
-             <property name="hibernate.connection.password">your_password</property>
-             <property name="hibernate.hbm2ddl.auto">update</property>
-             <property name="hibernate.show_sql">true</property>
-             <property name="hibernate.format_sql">true</property>
-         </session-factory>
-     </hibernate-configuration>
-     ```
-
-   - Replace `your_database`, `your_username`, and `your_password` with your actual MySQL database credentials.
-
-3. Run the application:
-    ```bash
-    mvn javafx:run
+4. **Configure Hibernate:**
+    - Open `hibernate.cfg.xml` and update the database connection settings:
+    ```xml
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/finger_talk_db</property>
+    <property name="hibernate.connection.username">yourusername</property>
+    <property name="hibernate.connection.password">yourpassword</property>
     ```
+    - Ensure you have the MySQL JDBC Driver in your project's library
 
-## Usage
+5. **Build and run the project:**
+    - Right-click on the project in the NetBeans Projects window
+    - Select `Clean and Build`
+    - Select `Run`
 
-1. Launch the application using the steps above.
-2. Navigate through the menu to select between learning ASL letters or numbers.
-3. Follow the on-screen instructions to play the game and learn ASL.
+## Using the Application
 
-## Contributing
+1. **Navigate the Main Menu:**
+    - Learn ASL letters and numbers
+    - Take on challenges to test your knowledge
+    - Explore the game settings and help sections
 
-1. Fork the repository.
-2. Create your feature branch (`git checkout -b feature/new-feature`).
-3. Commit your changes (`git commit -m 'Add new feature'`).
-4. Push to the branch (`git push origin feature/new-feature`).
-5. Open a pull request.
+2. **Learning Mode:**
+    - Select letters or numbers
+    - Follow the instructions to learn the ASL signs
+    - Listen to the audio cues and view the images
+
+3. **Challenge Mode:**
+    - Complete various challenges to test your ASL knowledge
+    - Earn points and track your progress
+
+
+## Demo
+
+For a quick demonstration of the Finger Talk application, check out our video demo: [Watch the Demo](https://drive.google.com/file/d/1xI0GoSs0AGRqNG8ZGd_KUS1W06m7uMcp/view)
 
 ## Contact
 
